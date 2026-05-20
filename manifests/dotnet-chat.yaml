@@ -1,9 +1,0 @@
-name: dotnet-chat
-
-imports:
-  - base/base.md
-  - base/communication.md
-  - base/engineering.md
-  - domains/dotnet.md
-  - domains/agentic-coding.md
-  - modes/chat-only.md

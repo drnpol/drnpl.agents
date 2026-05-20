@@ -1,0 +1,12 @@
+project:
+  name: TestProject
+
+extends:
+  - base/base
+  - base/communication
+  - base/engineering
+  - domains/agentic-coding
+  - modes/build-mode
+  - skills/git
+
+output: ./AGENTS.md

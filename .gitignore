@@ -1,0 +1,8 @@
+.opencode
+node_modules/
+dist/
+*.tgz
+AGENTS.md
+AGENTS-override.md
+output-test/
+modules/

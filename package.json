@@ -1,0 +1,28 @@
+{
+  "name": "agentmd",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Composable AGENTS.md builder — standardize agent instructions across projects",
+  "bin": {
+    "agentmd": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "dev": "tsx src/cli/index.ts"
+  },
+  "files": [
+    "dist/",
+    "modules/"
+  ],
+  "dependencies": {
+    "commander": "^13.1.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
