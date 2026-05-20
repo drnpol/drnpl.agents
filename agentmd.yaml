@@ -1,12 +1,53 @@
 project:
-  name: TestProject
+  name: Drnpl.ProServices
+  type: solution
+  framework: .NET 8.0
+  architecture: Clean Architecture
 
 extends:
   - base/base
   - base/communication
   - base/engineering
   - domains/agentic-coding
-  - modes/build-mode
-  - skills/git
+
+scopes:
+  global:
+    - scopes/base-rules
+
+  DEV.Common.Application:
+    - scopes/application-layer
+
+  DEV.Common.Domain:
+    - scopes/domain-layer
+
+  DEV.Common.Infrastructure:
+    - scopes/infrastructure
+
+  DEV.Common.Persistence:
+    - scopes/persistence
+
+  DEV.TimeSheetManager.API:
+    - scopes/web-api
+
+  DEV.TimeSheetManager.Application:
+    - scopes/application-layer
+
+  DEV.TimeSheetManager.Domain:
+    - scopes/domain-layer
+
+  DEV.TimeSheetManager.Infrastructure:
+    - scopes/infrastructure
+
+  DEV.TimeSheetManager.Persistence:
+    - scopes/persistence
+
+  DEV.TimeSheetManager.Tests:
+    - scopes/testing
+
+  DEV.TimeSheetManager.Tests.Integration:
+    - scopes/testing
+
+  DEV.TimeSheetManager.Importer:
+    - scopes/console-app
 
 output: ./AGENTS.md

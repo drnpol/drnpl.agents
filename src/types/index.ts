@@ -1,8 +1,17 @@
+export interface ScopesConfig {
+  global?: string[];
+  [scopeName: string]: string[] | undefined;
+}
+
 export interface AgentMDConfig {
   project: {
     name: string;
+    type?: string;
+    framework?: string;
+    architecture?: string;
   };
   extends: string[];
+  scopes?: ScopesConfig;
   output?: string;
   modulePath?: string;
 }
