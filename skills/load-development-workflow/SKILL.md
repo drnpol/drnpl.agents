@@ -26,7 +26,8 @@ Give a concise orientation: work and phase, versions, completed/remaining work, 
 ## Follow the recorded state
 
 - Unplanned phase: inspect relevant implementation and present a concrete plan.
-- Plan awaiting approval: present it with unresolved questions for approval.
+- Plan under discussion: answer feedback and resolve open questions in the conversation; do not rewrite or save the full proposal after each reply.
+- Plan ready for approval: once discussion is settled, present one consolidated proposal and request explicit approval.
 - Approved unfinished plan: verify assumptions and resume within that approval; do not demand reapproval solely because this is a new session.
 - Implementation complete, review pending: present the review gate and supporting evidence.
 - Accepted phase: propose the next phase and its planning; do not silently implement it.
@@ -35,11 +36,13 @@ Read-only session restrictions remain binding. If needed code cannot be inspecte
 
 ## Plan and implement
 
-Use the [implementation plan template](../../templates/development-workflow/implementation-plan.md). Present scope, decisions, affected areas, steps, verification, and exclusions. Resolve material questions and obtain explicit approval before implementation.
+Use the [implementation plan template](../../templates/development-workflow/implementation-plan.md) to organize the proposal in the conversation. Present scope, decisions, affected areas, steps, verification, and exclusions. During discussion, answer the user's questions and describe only the relevant adjustments; do not regenerate the whole proposed plan or create/update a plan file on each reply. Keep unresolved questions and agreed decisions in conversation context. Feedback on one detail is not approval of the whole plan.
 
-Save the exact approved plan before starting implementation. Record the actual approval and source document versions; do not infer approval from a filename or a draft status. Recording the already approved plan needs no second approval.
+When the discussion is settled and material questions are resolved, present one consolidated proposal for explicit implementation approval. If the user raises further questions, return to discussion. An explicit request to see the current full proposal may be fulfilled in the conversation without saving or versioning it.
 
-Preserve an approved baseline when materially changing scope, acceptance criteria, interfaces, or approach. Present the revision for approval before dependent work. Routine choices within the approved approach can proceed.
+Only after explicit approval, save the exact agreed plan before starting implementation. Use v1.0 for the first approved plan; for an approved revision, inspect the existing plan versions and allocate the next version under document conventions. Keep the filename and internal version identical. Never overwrite an approved plan's content or reuse its version for a changed plan. Record the actual approval, source document versions, supersedes link, and change summary. Update the overview's current plan link after the new file exists. Recording the already approved plan needs no second approval. Do not create a new version just for discussion, session resumption, or unchanged reapproval.
+
+Preserve the approved baseline when materially changing scope, acceptance criteria, interfaces, or approach. Discuss the revision without editing that baseline; consolidate and obtain approval before saving the next version and starting dependent work. Routine choices within the approved approach can proceed.
 
 Implement only the selected phase. Run checks appropriate to the accepted criteria and repository policy. Record passed, failed, and unperformed verification accurately. Passing checks does not imply user acceptance or permission to start another phase.
 
@@ -47,10 +50,16 @@ Perform automatic documentation Git checkpoints at the milestones defined in ses
 
 ## Leave a usable handoff
 
-Use the [handoff template](../../templates/development-workflow/handoff.md) at completion, or when blocked/paused and writing is permitted. Record actual behavior, important decisions, key files with responsibilities, contracts, verification, unresolved work, and the next permitted action. Link only predecessor context the next agent needs.
+After implementation and verification, present the results, evidence, limitations, and required review in the conversation. Set execution status to awaiting-review where status tracking is permitted. Do not create or update a handoff file yet. Wait for the user to explicitly accept the reviewed work (for example, "all good" in response to that review). Passing tests, silence, plan approval, or an agent's completion statement is not user acceptance.
+
+If the user requests fixes, address them within the approved scope, repeat affected checks, and present the updated results for review. Keep the handoff unwritten until acceptance. If the fixes materially change the approved plan, follow the plan revision process first.
+
+After acceptance, use the [handoff template](../../templates/development-workflow/handoff.md) and record the actual acceptance and date. No second approval is needed to write this accepted handoff. Record actual behavior, important decisions, key files with responsibilities, contracts, verification, unresolved work, and the next permitted action. Link only predecessor context the next agent needs.
+
+For blocked or paused work, explain the current state and outstanding work in the conversation first. Write a blocked/pause handoff only after the user explicitly approves handing off that incomplete state or directly requests that handoff with the state already clear. Record approval to hand off separately from phase acceptance; incomplete work remains unaccepted. A pause, blocker, context compaction, or session ending alone does not authorize a handoff.
 
 Keep it concise enough to enable targeted reads. Distinguish implemented, verified, and user-accepted states. Do not claim that checks passed or a phase was accepted without evidence.
 
 Update the overview index with the current plan, handoff, and execution status. Preserve approved requirements and historical versions. Verify document links and perform the authorized Git checkpoint.
 
-Report the outcome, verification limits, handoff path, and review gate. Stop before the next phase's implementation until its plan is approved.
+Before acceptance, report the outcome, verification limits, and pending review without a handoff path. After the approved handoff is saved, report its path and the next permitted action. Stop before the next phase's implementation until its plan is approved.

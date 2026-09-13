@@ -42,7 +42,9 @@ After session authorization, do not request permission for each eligible commit/
 - An approved overview, phase, or implementation plan is recorded.
 - An approved important decision changes scope, acceptance, or a shared contract.
 - A coherent documentation revision is complete.
-- A completion, blocked, or pause handoff is recorded.
+- A completion handoff is recorded after user review and acceptance, or a blocked/pause handoff is recorded after explicit approval to hand off that incomplete state.
+
+These checkpoints do not authorize early plan or handoff writes: discussion replies do not trigger saved plan revisions, and review-pending results do not trigger handoffs.
 
 Group edits belonging to one decision. Do not commit every keystroke, unapproved draft as approved, or unrelated changes. Implementation changes in an application repository are outside this permission.
 

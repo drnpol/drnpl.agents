@@ -33,10 +33,14 @@ If an overview is superseded, update current backlinks and indexes. Repair relat
 - Start at v1.0.
 - Increment minor for clarification/refinement preserving intended outcome.
 - Increment major for material scope, acceptance, or contract changes.
-- Drafts may be edited. Preserve approved baselines when superseding them, with a supersedes link and change summary.
+- Overview and phase drafts may be edited. Implementation-plan discussion stays in the conversation: do not create or update plan files or allocate versions for each feedback reply. Save a plan only once its discussion is settled and the user explicitly approves implementation.
+- First approved implementation plan: v1.0. Each changed, approved replacement gets the next minor or major version under the rules above (for example, v1.0 to v1.1 for an approach refinement, or v1.1 to v2.0 for changed scope). Inspect existing versions, never reuse a version, and match the filename to the internal version. Resuming or reapproving an unchanged plan creates no version.
+- Preserve approved baselines when superseding them, with a supersedes link and change summary. Create the approved replacement before updating the overview's current plan link.
 - Version significance does not determine approval: a material approach change still requires approval even if its document version is minor.
 - Execution status/link maintenance alone does not require a requirements version bump.
 - Archive superseded files after establishing the replacement and updating references, subject to repository policy.
+
+Handoff files are written only after the user accepts the reviewed results. Present review evidence in the conversation first; fixes return to review before recording the handoff. For incomplete blocked/paused work, require explicit approval to hand off the explained state, record that approval, and leave phase acceptance pending. Do not create or revise handoff files during review discussion. Allocate a fresh date/sequence filename for each approved handoff and preserve earlier records.
 
 Suggested execution states: not-started, planning, awaiting-plan-approval, implementing, blocked, awaiting-review, accepted. Plan approval and phase acceptance are separate events. Never infer either from completed code or passing checks.
 
