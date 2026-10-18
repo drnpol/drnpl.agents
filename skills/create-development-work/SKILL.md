@@ -1,6 +1,6 @@
 ---
 name: create-development-work
-description: Initialize a development task or project with a confirmed overview and versioned phases. Use when creating new development work; use load-development-workflow to resume existing work.
+description: Initialize a development task or project with a confirmed overview and versioned phases. Use when user explicitly used the skill in creating new development work; use load-development-workflow to resume existing work.
 ---
 
 # Create development work
