@@ -31,6 +31,8 @@ If an overview is superseded, update current backlinks and indexes within the au
 
 ## Versioning and status
 
+Keep one stable Notion page per overview and per phase/work item. Update the current content and version label on that page; preserve approved baselines as labelled history sections or toggles on the same page. A version increment does not create a new page or local Markdown snapshot. Separate dated handoff pages record distinct sessions. Create a separate replacement overview/phase page only when the user explicitly requests that structure; the supersession guidance below is not a default instruction to duplicate pages.
+
 - Start at v1.0.
 - Increment minor for clarification/refinement preserving intended outcome.
 - Increment major for material scope, acceptance, or contract changes.
