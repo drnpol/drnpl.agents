@@ -1,5 +1,14 @@
 # Session configuration and documentation Git management
 
+## Documentation Repository
+Usually found in the following locations:
+  - .agents/
+  - agent-docs
+
+The documentation repository should be a valid repository with checked-out `agent` or `agents` branch.
+
+If the documentation repository is not found or is not valid, do not create your own directories or repositories, and do not confirm with the user. Disable git management completely.
+
 ## Extensible session options
 
 At the first use of either workflow skill in a session, establish:
@@ -16,12 +25,16 @@ Without an answer, use user-managed Git. This does not block otherwise authorize
 Repository defaults may persist, but mark recorded session permission as historical and nontransferable. Add future options here with a default, scope, and whether fresh confirmation is required; do not invent permission for additional actions.
 
 ## Git modes
-
 - User-managed: no staging, commits, pushes, branch changes, or synchronization mutations by the agent.
 - Agent commits: authorized documentation changes may be staged and committed; no push.
 - Agent commits and pushes: also push each checkpoint commit to the agreed remote branch.
 
+## Versioning modes
+- Commit: Use as default; Changes will be saved in the new file with updated version number, and then committed to the documentation repository with meaningful commit message.
+- Archive: historical markdowns will be archived in the history folder
+
 These permissions cover only the agreed documentation repository (normally the separate .agents repository). They do not cover the parent application's Git operations or unrelated files in a general-purpose repository.
+
 
 ## Default rules for agent-managed documentation
 

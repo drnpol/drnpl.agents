@@ -1,5 +1,5 @@
 ---
-name: load-development-workflow
+name: load-development-work
 description: Start or resume a phase-based development session from a task, project, phase, or handoff; confirm session options, recover approved plans, implement authorized scope, verify, and record handoffs.
 ---
 
@@ -7,7 +7,7 @@ description: Start or resume a phase-based development session from a task, proj
 
 Use this skill at the start of each development session. Do not assume it was loaded because an earlier session used it. A session is the current working conversation; context compaction does not start a new session, but a new task/conversation does.
 
-This skill includes local copies of the shared workflow instructions and templates. Keep these resources with the skill when distributing it.
+Keep this skill, its companion create-development-work, and their shared instructions and templates together when distributing them.
 
 ## Establish the session
 

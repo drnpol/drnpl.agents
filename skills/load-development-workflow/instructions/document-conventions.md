@@ -4,11 +4,12 @@
 
 A task has one bounded outcome. A project coordinates multiple related outcomes and shared contracts. Both use phases; a task may have one phase.
 
-Preserve existing conventions. New default:
-- .agents/tasks/YYYYMMDD-work-slug/TASK_v1.0.md
-- .agents/projects/YYYYMMDD-work-slug/PROJECT_v1.0.md
+Any work however, can be either a task or a project.
 
-When already operating at the separate documentation repository root, omit the .agents prefix. Confirm the actual destination rather than creating a nested .agents accidentally.
+Preserve existing conventions. New default:
+- {{documentation-repository-root}}/tasks/YYYY/MM/YYYYMMDD-work-slug/WORK_v1.0.md
+
+If work location or respoitory root is not confirmed, confirm the actual destination rather than creating one on your own.
 
 Within a work directory:
 - phases/PH-01-phase-slug_v1.0.md
@@ -26,11 +27,10 @@ Plans explain the approved implementation approach. Handoffs explain actual resu
 
 Use relative Markdown links in generated documents. Overview rows link the current phase, plan, and latest handoff. Phases resolve evolving shared references through the current overview, or explicitly state why a particular version is pinned. Plans pin the actual versions used.
 
-If an overview is superseded, update current backlinks and indexes. Repair relative links inside moved historical files so they still resolve, without changing their historical requirements. Do not silently execute historical phases.
+If an overview is superseded, update current backlinks and indexes. Repair relative links inside historical files so they still resolve, without changing their historical requirements. Do not silently execute historical phases.
 
 ## Versioning and status
-
-- Start at v1.0.
+- User will draft a work with v0 or v0.0, otherwise always start with v1.0
 - Increment minor for clarification/refinement preserving intended outcome.
 - Increment major for material scope, acceptance, or contract changes.
 - Overview and phase drafts may be edited. Implementation-plan discussion stays in the conversation: do not create or update plan files or allocate versions for each feedback reply. Save a plan only once its discussion is settled and the user explicitly approves implementation.
@@ -38,7 +38,8 @@ If an overview is superseded, update current backlinks and indexes. Repair relat
 - Preserve approved baselines when superseding them, with a supersedes link and change summary. Create the approved replacement before updating the overview's current plan link.
 - Version significance does not determine approval: a material approach change still requires approval even if its document version is minor.
 - Execution status/link maintenance alone does not require a requirements version bump.
-- Archive superseded files after establishing the replacement and updating references, subject to repository policy.
+- If Versioning mode is set to `Archive`, archive superseded files after establishing the replacement and updating references, subject to repository policy.
+- If Versioning mode is set to `Commit`, commit updated markdown files with meaningful commit message after establishing the replacement and updating references, subject to repository policy.
 
 Handoff files are written only after the user accepts the reviewed results. Present review evidence in the conversation first; fixes return to review before recording the handoff. For incomplete blocked/paused work, require explicit approval to hand off the explained state, record that approval, and leave phase acceptance pending. Do not create or revise handoff files during review discussion. Allocate a fresh date/sequence filename for each approved handoff and preserve earlier records.
 

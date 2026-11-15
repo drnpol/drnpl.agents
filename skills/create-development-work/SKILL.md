@@ -1,13 +1,13 @@
 ---
 name: create-development-work
-description: Initialize a development task or project with a confirmed overview and versioned phases. Use when user explicitly used the skill in creating new development work; use load-development-workflow to resume existing work.
+description: Initialize a development task or project with a confirmed overview and versioned phases. Use when creating new development work; use load-development-workflow to resume existing work.
 ---
 
 # Create development work
 
 Use this skill to initialize documentation for a bounded task or a multi-outcome project. Preserve user-supplied requirements and phases; do not impose a method for inventing phases.
 
-This skill includes local copies of the shared workflow instructions and templates. Keep these resources with the skill when distributing it.
+This skill uses shared resources two directories above this folder. Keep both workflow skills, Shared/development-work/instructions, and Shared/development-work/templates together when distributing them.
 
 ## Before creating files
 
@@ -20,10 +20,8 @@ Present the proposed type, location, outcome, scope/exclusions, phase breakdown,
 ## Create the approved structure
 
 Use the appropriate overview and phase templates:
-- [Task overview](./templates/task-overview.md)
-- [Project overview](./templates/project-overview.md)
-- [Task phase](./templates/task-phase.md)
-- [Project phase](./templates/project-phase.md)
+- [Work overview](./templates/work-overview.md)
+- [Work phase](./templates/work-phase.md)
 
 Replace template placeholders with confirmed details. Mark unresolved items explicitly instead of inventing decisions. Keep the overview's phase index and each phase's backlink consistent. Shared rules belong in the overview or linked contracts.
 

@@ -1,7 +1,7 @@
 # PH-<NN> — <Phase title>
 
 - Version: v1.0
-- Overview: [<Work title>](../TASK_v1.0.md)
+- Overview: [<Work title>](../WORK_v1.0.md)
 - Supersedes: <none, or historical link and change summary>
 - Requirements approval: <draft, or actual confirmation/date>
 
@@ -17,6 +17,9 @@ Read the current overview, its applicable shared references, and only the predec
 
 ## Exclusions
 <Explicitly deferred behavior.>
+
+## Cross-phase contract impact
+<Contracts consumed or changed, downstream dependents, and required guide updates.>
 
 ## Acceptance and verification
 <Concrete acceptance criteria and how each will be checked.>
