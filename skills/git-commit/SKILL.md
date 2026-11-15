@@ -59,9 +59,15 @@ User can choose one of the foollowing modes:
 - default:
   - Commit the changes using the standard format. Commit user and attributions must be owned by the user.
   - A commit without a specified should automatically use default without confirming with the user.
+- "Commit as you"
+  - Commits must be attributed to the agent. 
+  - Commiter identity must be overriden only form the commit. Local and global Git configuration must not be changed. 
 - "Commit with you"
-  - Commits must have agent attributions included at the <footer>. Depending on the provider a Co-authored-by attribution must be added to the commit message. For example, commits assisted by claude should have Co-authored-by: Claude <noreply@anthropic.com>, and commits assisted by codex should have Co-authored-by: Codex <codex@openai.com>
-  - Do not assume the provider. If the agent provider is ambiguious or unknown while using this mode, you must confirm with the user before adding any attribution, else use the default mode. 
+  - Commits must have agent attributions included at the <footer>. Depending on the provider a Co-authored-by attribution must be added to the commit message.
+
+If mode requires agent attribution, commits assisted by claude should have Co-authored-by: Claude <noreply@anthropic.com>, and commits assisted by codex should have Co-authored-by: Codex <codex@openai.com>
+
+Do not assume the provider. If the agent provider is ambiguious or unknown while using a mode that needs an agent information, you must confirm with the user before adding any attribution, else use the default mode. 
 
 ## Workflow
 
