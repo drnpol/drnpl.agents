@@ -1,0 +1,14 @@
+interface:
+  display_name: "Collaborate .NET Backend"
+  short_description: "Coordinate focused backend development and verification"
+  brand_color: "#3B82F6"
+  default_prompt: "Use $collaborate-dotnet-backend to coordinate implementation and verification of my .NET backend task."
+
+policy:
+  allow_implicit_invocation: false
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "codebase-memory"
+      description: "Codebase graph search, architecture, and call-chain tracing"
