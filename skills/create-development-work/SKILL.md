@@ -7,11 +7,11 @@ description: Initialize a development task or project with a confirmed overview 
 
 Use this skill to initialize documentation for a bounded task or a multi-outcome project. Preserve user-supplied requirements and phases; do not impose a method for inventing phases.
 
-This skill uses shared resources two directories above this folder. Keep both workflow skills, instructions/development-workflow, and templates/development-workflow together when distributing them.
+This skill includes local copies of the shared workflow instructions and templates. Keep these resources with the skill when distributing it.
 
 ## Before creating files
 
-Read [session configuration](../../instructions/development-workflow/session-configuration.md) and [document conventions](../../instructions/development-workflow/document-conventions.md). Read applicable repository instructions within the user's permitted scope. Confirm session options once; reuse a confirmation already given in this same session.
+Read [session configuration](./instructions/session-configuration.md) and [document conventions](./instructions/document-conventions.md). Read applicable repository instructions within the user's permitted scope. Confirm session options once; reuse a confirmation already given in this same session.
 
 Recommend task for one bounded outcome, or project for related outcomes with shared contracts and cross-phase dependencies. Either may have one or more phases. Ask only for missing information needed to define the work.
 
@@ -20,10 +20,10 @@ Present the proposed type, location, outcome, scope/exclusions, phase breakdown,
 ## Create the approved structure
 
 Use the appropriate overview and phase templates:
-- [Task overview](../../templates/development-workflow/task-overview.md)
-- [Project overview](../../templates/development-workflow/project-overview.md)
-- [Task phase](../../templates/development-workflow/task-phase.md)
-- [Project phase](../../templates/development-workflow/project-phase.md)
+- [Task overview](./templates/task-overview.md)
+- [Project overview](./templates/project-overview.md)
+- [Task phase](./templates/task-phase.md)
+- [Project phase](./templates/project-phase.md)
 
 Replace template placeholders with confirmed details. Mark unresolved items explicitly instead of inventing decisions. Keep the overview's phase index and each phase's backlink consistent. Shared rules belong in the overview or linked contracts.
 

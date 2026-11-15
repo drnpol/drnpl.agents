@@ -7,11 +7,11 @@ description: Start or resume a phase-based development session from a task, proj
 
 Use this skill at the start of each development session. Do not assume it was loaded because an earlier session used it. A session is the current working conversation; context compaction does not start a new session, but a new task/conversation does.
 
-Keep this skill, its companion create-development-work, and their shared instructions and templates together when distributing them.
+This skill includes local copies of the shared workflow instructions and templates. Keep these resources with the skill when distributing it.
 
 ## Establish the session
 
-Read [session configuration](../../instructions/development-workflow/session-configuration.md) and [document conventions](../../instructions/development-workflow/document-conventions.md). Read applicable repository instructions within the permitted scope.
+Read [session configuration](./instructions/session-configuration.md) and [document conventions](./instructions/document-conventions.md). Read applicable repository instructions within the permitted scope.
 
 Accept an overview, phase, handoff, or work directory as the entry point. If the user supplies none and current context does not identify the work, ask which task, project, phase, or handoff to load. Do not require a handoff for the first session.
 
@@ -36,7 +36,7 @@ Read-only session restrictions remain binding. If needed code cannot be inspecte
 
 ## Plan and implement
 
-Use the [implementation plan template](../../templates/development-workflow/implementation-plan.md) to organize the proposal in the conversation. Present scope, decisions, affected areas, steps, verification, and exclusions. During discussion, answer the user's questions and describe only the relevant adjustments; do not regenerate the whole proposed plan or create/update a plan file on each reply. Keep unresolved questions and agreed decisions in conversation context. Feedback on one detail is not approval of the whole plan.
+Use the [implementation plan template](./templates/implementation-plan.md) to organize the proposal in the conversation. Present scope, decisions, affected areas, steps, verification, and exclusions. During discussion, answer the user's questions and describe only the relevant adjustments; do not regenerate the whole proposed plan or create/update a plan file on each reply. Keep unresolved questions and agreed decisions in conversation context. Feedback on one detail is not approval of the whole plan.
 
 When the discussion is settled and material questions are resolved, present one consolidated proposal for explicit implementation approval. If the user raises further questions, return to discussion. An explicit request to see the current full proposal may be fulfilled in the conversation without saving or versioning it.
 
@@ -54,7 +54,7 @@ After implementation and verification, present the results, evidence, limitation
 
 If the user requests fixes, address them within the approved scope, repeat affected checks, and present the updated results for review. Keep the handoff unwritten until acceptance. If the fixes materially change the approved plan, follow the plan revision process first.
 
-After acceptance, use the [handoff template](../../templates/development-workflow/handoff.md) and record the actual acceptance and date. No second approval is needed to write this accepted handoff. Record actual behavior, important decisions, key files with responsibilities, contracts, verification, unresolved work, and the next permitted action. Link only predecessor context the next agent needs.
+After acceptance, use the [handoff template](./templates/handoff.md) and record the actual acceptance and date. No second approval is needed to write this accepted handoff. Record actual behavior, important decisions, key files with responsibilities, contracts, verification, unresolved work, and the next permitted action. Link only predecessor context the next agent needs.
 
 For blocked or paused work, explain the current state and outstanding work in the conversation first. Write a blocked/pause handoff only after the user explicitly approves handing off that incomplete state or directly requests that handoff with the state already clear. Record approval to hand off separately from phase acceptance; incomplete work remains unaccepted. A pause, blocker, context compaction, or session ending alone does not authorize a handoff.
 

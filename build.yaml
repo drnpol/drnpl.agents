@@ -1,0 +1,14 @@
+version: 1
+steps:
+  - name: workflow-instructions
+    action: copy
+    source: instructions/development-workflow
+    destinations:
+      - skills/create-development-work/instructions
+      - skills/load-development-workflow/instructions
+  - name: workflow-templates
+    action: copy
+    source: templates/development-workflow
+    destinations:
+      - skills/create-development-work/templates
+      - skills/load-development-workflow/templates
