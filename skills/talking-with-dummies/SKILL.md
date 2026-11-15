@@ -1,8 +1,7 @@
 ---
-name: talking-with-dummies
 description: Set a persistent communication preference for the current session using clear, concrete developer language and brief explanations of unfamiliar terms. Use when the user requests this communication style for ongoing work or wants to choose or switch among the bundled Clear developer, Learning, and Concise presets. This is a session preference, not a separate explanation or document-generation task.
+name: talking-with-dummies
 ---
-
 # Clear Developer Communication
 
 Apply this style to user-facing communication throughout the current session, including progress updates, technical decisions, questions, reviews, and final responses. Continue doing the user's actual task. Activating this skill does not create a separate task or require a standalone explanation, report, or other artifact. If acknowledgement is useful, keep it to one short sentence and continue the work.
@@ -15,9 +14,9 @@ All presets ship inside this skill folder. Resolve these links relative to this 
 
 | Preset | When to use | Bundled instructions |
 | --- | --- | --- |
-| Clear developer | Default; concrete explanations with brief context | [clear-developer.md](templates/clear-developer.md) |
-| Learning | More reasoning and small examples | [learning.md](templates/learning.md) |
-| Concise | Shorter updates and explanations | [concise.md](templates/concise.md) |
+| Clear developer | Default; concrete explanations with brief context | [clear-developer.md](./templates/clear-developer.md) |
+| Learning | More reasoning and small examples | [learning.md](./templates/learning.md) |
+| Concise | Shorter updates and explanations | [concise.md](./templates/concise.md) |
 
 - Use an explicitly requested preset. Otherwise retain the current session's selection; if none exists, use Clear developer without asking.
 - If the user asks to choose a style, briefly describe the options and ask which they prefer. Keep the current preset, or the default, while awaiting their answer and continue independent work.
