@@ -1,3 +1,8 @@
+# Custom
+.agent/
+.agents/
+.agent-docs/
+
 # Operating system
 .DS_Store
 Thumbs.db
