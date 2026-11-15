@@ -71,6 +71,8 @@ Use the templates for content organization, adapting file paths and relative lin
 
 Create only the approved overview and phase pages, with properties and relations verified against the current schema. Keep Notion as the documentation destination; local copies and Git checkpoints require a separate user request. Do not create implementation plans or handoffs during initialization.
 
+Apply the shared session configuration's parent-relation rules before bulk creation or linking: each phase has its intended single parent; top-level epics have none. Verify both sides of one assignment before continuing. Keep future versions within those same pages under document conventions.
+
 If creation partially succeeds, retain the successful page references and inspect them before retrying; create only the missing parts. Report any incomplete structure.
 
 Read back the created pages and verify page links, unique phase IDs, account/project and parent relations where applicable, dependency order, concrete acceptance criteria, and that excluded work has not entered phase scope.
